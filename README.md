@@ -46,6 +46,6 @@ Open `Frida-unpinning-monster.js` and edit the configuration constants near line
    ```
 3. **Spawn the target application with Frida**:
    ```bash
-   frida -U -f <package.name> -l Frida-unpinning-monster.js --no-pause
+   frida -U -f <package.name> -l Frida-unpinning-monster.js
    ```
    > **Note:** Always prefer spawning with `-f` over attaching (`-n`) so hooks are installed before the app caches its SSL context.
