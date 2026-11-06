@@ -2,6 +2,8 @@
 
 An all-in-one Frida script for Android that provides **proxy redirection**, **custom CA certificate trust injection**, **SSL/TLS pinning bypass**, and **root detection bypass**.
 
+> **Works Out of the Box on Any Android Application:** This script works seamlessly across **Java/Kotlin**, **Native (C/C++ BoringSSL/OpenSSL)**, and **Flutter** applications without needing any target-specific setup or flags. Every layer is loaded automatically and self-gates based on the libraries present in the app.
+
 ## Features
 
 - **Java / Kotlin Unpinning**: Supports OkHttp (v2/v3), `HttpsURLConnection`, Conscrypt, `NetworkSecurityConfig`, TrustKit, Appcelerator, Cordova/PhoneGap, IBM WorkLight, Netty, Appmattus Certificate Transparency, and includes an automatic fallback error-patcher for obfuscated classes.
